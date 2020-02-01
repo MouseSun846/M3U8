@@ -1,0 +1,79 @@
+I:\Users\78623\PycharmProjects\Text\venv\Scripts\python.exe I:/Users/78623/PycharmProjects/Text/venv/M3U8.py
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><title>
+	云播放
+</title><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">body,html,div{background-color:#000;padding: 0;margin: 0;width:100%;height:100%;color:#aaa;}</style>
+    <link rel="stylesheet" type="text/css" href="/Content/Css/comun.css" />
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+     <script type="text/javascript" src="/Scripts/status.js?t=20190824"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#opciones').hide();
+            $('#settings').click(function () {
+                $('#opciones').slideToggle();
+                $(this).toggleClass("cerrar");
+
+            });
+        });
+
+</script>
+ <script type="text/javascript">
+     $(document).ready(
+    function () {
+       $.ajax({
+            type: "post",
+            dataType: "json",
+            url: "/lines/getdata",
+            data: { url: "https://www.mgtv.com/b/328837/7488432.html", type: "", name: "",episode:0, key: "a0b923820dcc509a" },
+            success:ShowMenu
+//             success: function (data) {
+//
+//              setvideourl(data.Moren);
+//               var str = "";
+//              for(i in data.Listurl)
+//              {
+//              var n=+i+1;
+//               str += "<p><a href=\"javascript:void(0);\"  onclick=\"setvideourl('"+data.Listurl[i]+"')\" target=\"video\">线路"+n+"</a></p>"
+//              }
+//              $("#opciones").append(str);
+//             }
+             });}
+  );
+ </script>
+</head>
+
+    <body style="text-align:center">
+
+<div id="settings">Settings</div>
+
+<div id="video"><div id="loading" style="font-weight:bold;padding-top:90px;height:0;" align="center">正在自动优化线路,15秒后不能播放请刷新一下...</div></div>
+
+<div id="opciones">
+
+</div>
+<script type="text/javascript">      </script>
+
+
+</body>
+</html>
+
+<div style="display:none"><script src="https://s22.cnzz.com/z_stat.php?id=1263695364&web_id=1274094172" language="JavaScript"></script></div>
+None
+
+Process finished with exit code 0
+
+
+{'url':'https://www.mgtv.com/b/328837/7488432.html','type':'','name':'','episode':'0','key':'a0b923820dcc509a'}
+
+{'UM_distinctid':'16ffb68230d6e-043cd0f275d51a-36664c08-100200-16ffb6823101c8',
+'weParser_youku_cna':'FhRPFjp3ggUCAXAKgnN1DtXN','top':'true',
+'CNZZDATA1274094140':'1586191632-1580468275-null|1580522704'}
+'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'
